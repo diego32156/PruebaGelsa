@@ -1,0 +1,16 @@
+<div class="venta-recargas">
+    <h2>Venta de Recargas</h2>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" [(ngModel)]="cantidad">
+    <label for="operador">Operador:</label>
+    <select id="operador" [(ngModel)]="operador">
+      <option value="Tigo">Tigo</option>
+      <option value="Movistar">Movistar</option>
+      <option value="Comcel">Comcel</option>
+      <option value="Uff">Uff</option>
+    </select>
+    <label for="vendedor">Vendedor:</label>
+    <input type="text" id="vendedor" [(ngModel)]="vendedor">
+    <button (click)="realizarVenta()">Realizar Venta</button>
+  </div>
+  
